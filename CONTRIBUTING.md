@@ -186,15 +186,3 @@ Different technical opinions are welcome. The goal is building a reliable, open,
 
 Thank you for contributing to Simorgh AI Research Browser.
 
-
-بعد از Paste:
-
-**Commit message:**
-
-
-docs: add contributing guidelines
-
-
-و Commit کن.
-
-این نسخه فعلاً برای فاز اول پروژه کافی است. بعداً وقتی کد واقعی اضافه شد، بخش‌هایی مثل تست، CI/CD و قوانین Code Review را دقیق‌تر می‌کنیم.
