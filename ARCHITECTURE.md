@@ -285,19 +285,85 @@ core:memory.recordVisit() برای هر صفحه → Knowledge Graph به‌رو
 
 جدول کامل و به‌روز در [`docs/tech-stack.md`](./docs/tech-stack.md) نگه‌داری می‌شود. خلاصه فعلی:
 
-| لایه | انتخاب فعلی | ADR |
-|---|---|---|
-| زبان | Kotlin | ADR-0001 |
-| UI | Jetpack Compose | ADR-0001 |
-| DI | Hilt | ADR-0001 |
-| Async | Kotlin Coroutines + Flow | ADR-0001 |
-| ماژول‌بندی | Gradle Multi-module | ADR-0001 |
-| سیستم Capability | BrowserCapability interface | ADR-0002 |
-| AI Provider | Claude API (از طریق `AiEngine` abstraction) | ADR-0003 |
-| دیتابیس محلی | Room | ADR-0004 |
-| Vector Store | sqlite-vec (on-device) | ADR-0004 |
-| ماژول‌بندی | Gradle Multi-module | ADR-0008 |
-
+|
+ لایه 
+|
+ انتخاب فعلی 
+|
+ ADR 
+|
+|
+---
+|
+---
+|
+---
+|
+|
+ زبان 
+|
+ Kotlin 
+|
+ ADR-0001 
+|
+|
+ UI 
+|
+ Jetpack Compose 
+|
+ ADR-0001 
+|
+|
+ DI 
+|
+ Hilt 
+|
+ ADR-0001 
+|
+|
+ Async 
+|
+ Kotlin Coroutines + Flow 
+|
+ ADR-0001 
+|
+|
+ ماژول‌بندی 
+|
+ Gradle Multi-module 
+|
+ ADR-0001 
+|
+|
+ سیستم Capability 
+|
+ BrowserCapability interface 
+|
+ ADR-0002 
+|
+|
+ AI Provider 
+|
+ Claude API (از طریق 
+`AiEngine`
+ abstraction) 
+|
+ ADR-0003 
+|
+|
+ دیتابیس محلی 
+|
+ Room 
+|
+ ADR-0004 
+|
+|
+ Vector Store 
+|
+ sqlite-vec (on-device) 
+|
+ ADR-0004 
+|
 **قانون مهم برای Contributor ها:** هیچ وابستگی بیرونی جدید (خصوصاً دیتابیس، DI، شبکه، یا AI provider) بدون یک ADR همراه در همان PR پذیرفته نمی‌شود. الگو در `docs/adr/template.md` موجود است.
 
 ---
