@@ -129,7 +129,8 @@ interface BrowserCapability {
 
 ### ۴.۳ WebView Pool — مدیریت حافظه
 
-برای جلوگیری از کرش با تب‌های زیاد، حداکثر تعداد محدودی WebView واقعی هم‌زمان زنده است (پیش‌فرض قابل تنظیم). تب‌های غیرفعال state خود (`WebView.saveState()`، عنوان، favicon، thumbnail) را در Room ذخیره می‌کنند و WebView واقعی‌شان آزاد می‌شود. جزئیات کامل در `docs/architecture/webview-pool.md`.
+برای جلوگیری از کرش با تب‌های زیاد، حداکثر تعداد محدودی WebView واقعی هم‌زمان زنده است (پیش‌فرض قابل تنظیم). تب‌های غیرفعال state خود (`WebView.saveState()`، عنوان، favicon، thumbnail) را در Room ذخیره می‌کنند و WebView واقعی‌شان آزاد می‌شود. «جزئیات کامل در docs/architecture/webview-pool.md مستند خواهد شد (این فایل هنوز ساخته نشده).»
+
 
 ### ۴.۴ پایداری در برابر کرش
 
@@ -283,7 +284,7 @@ core:memory.recordVisit() برای هر صفحه → Knowledge Graph به‌رو
 
 ## ۹. تصمیم‌های فناوری (خلاصه)
 
-جدول کامل و به‌روز در [`docs/tech-stack.md`](./docs/tech-stack.md) نگه‌داری می‌شود. خلاصه فعلی:
+«جدول کامل و به‌روز در docs/tech-stack.md نگه‌داری خواهد شد (این فایل هنوز ساخته نشده — تا ساخته شدنش، همین جدول خلاصه زیر مرجع است).»
 | لایه | انتخاب فعلی | ADR |
 |---|---|---|
 | زبان | Kotlin | ADR-0001 |
@@ -323,10 +324,11 @@ class RoomTabDataSourceTest : TabDataSourceContractTest() {
 
 جزئیات کامل در [`docs/roadmap.md`](./docs/roadmap.md). خلاصه:
 
-- **v0.1 — Core:** WebView Pool، Capability system، گروه‌بندی تب، فونت فارسی
-- **v0.2 — Intelligence پایه:** `AiEngine` + اتصال Claude، `persian-intelligence` (خلاصه‌سازی و RTL)
-- **v0.3 — Agent:** `agent-runtime` با ابزارهای پایه، Memory (فقط Episodic)
-- **v1.0 — چشم‌انداز کامل:** Vector Memory + Knowledge Graph، Agent با ابزارهای کامل، Sync (اختیاری)
+- **v0.1 — Browser Foundation:** WebView Pool، Capability system، گروه‌بندی تب، فونت فارسی
+- **v0.2 — AI Intelligence Layer:** `AiEngine` + اتصال Claude، `persian-intelligence` (خلاصه‌سازی، ترجمه، RTL)
+- **v0.3 — AI Agent System:** `agent-runtime`، Tool system، تایید کاربر برای اقدامات حساس
+- **v0.4 — Personal Memory:** Local memory، Vector memory، Knowledge graph، پیشنهادهای شخصی‌سازی‌شده
+- **v1.0 — Intelligent Research Browser:** اکوسیستم کامل Plugin/Capability، ابزارهای پیشرفته پژوهش
 
 ---
 
