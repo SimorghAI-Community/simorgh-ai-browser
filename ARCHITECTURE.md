@@ -288,12 +288,14 @@ core:memory.recordVisit() برای هر صفحه → Knowledge Graph به‌رو
 | لایه | انتخاب فعلی | ADR |
 |---|---|---|
 | زبان | Kotlin | ADR-0001 |
-| UI | Jetpack Compose | ADR-0002 |
-| دیتابیس محلی | Room | ADR-0003 |
+| UI | Jetpack Compose | ADR-0001 |
+| DI | Hilt | ADR-0001 |
+| Async | Kotlin Coroutines + Flow | ADR-0001 |
+| ماژول‌بندی | Gradle Multi-module | ADR-0001 |
+| سیستم Capability | BrowserCapability interface | ADR-0002 |
+| AI Provider | Claude API (از طریق `AiEngine` abstraction) | ADR-0003 |
+| دیتابیس محلی | Room | ADR-0004 |
 | Vector Store | sqlite-vec (on-device) | ADR-0004 |
-| AI Provider | Claude API (از طریق `AiEngine` abstraction) | ADR-0005 |
-| DI | Hilt | ADR-0006 |
-| Async | Kotlin Coroutines + Flow | ADR-0007 |
 | ماژول‌بندی | Gradle Multi-module | ADR-0008 |
 
 **قانون مهم برای Contributor ها:** هیچ وابستگی بیرونی جدید (خصوصاً دیتابیس، DI، شبکه، یا AI provider) بدون یک ADR همراه در همان PR پذیرفته نمی‌شود. الگو در `docs/adr/template.md` موجود است.
